@@ -1,39 +1,66 @@
-# My Website
+# Biscotti Cafe Website
 
-This is a Next.js website with authentication and blog functionality.
+A modern restaurant website with backend integration, featuring a menu, contact form, and WhatsApp integration.
 
-## Project Overview
+## Features
 
-This website includes:
-- Homepage with navigation
-- Blog section with markdown post support
-- User authentication (sign up and sign in)
-- Database integration with Prisma and PostgreSQL
+- Responsive design with a white and black aesthetic theme
+- Menu section with prices for:
+  - Vanilla Cake @ 450 KSH
+  - Spaghetti and meatballs @ 1100 KSH
+  - Coffee @ 270 KSH
+  - Mocktails @ 550 KSH
+  - Pizza @ 1300 KSH
+  - Shrimp @ 1500 KSH
+  - Waffles @ 750 KSH
+  - Cheesecake @ 800 KSH
+- Contact form with backend integration using Prisma ORM
+- WhatsApp integration for easy customer communication
+- Direct phone number contact (+254 116 000 026)
 
-## Documentation
+## Technologies Used
 
-For a comprehensive explanation of how this project works, see [PROJECT_ARCHITECTURE.md](PROJECT_ARCHITECTURE.md).
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Node.js
+- Express.js
+- Prisma ORM
+- SQLite database
 
-## Development
+## Setup Instructions
 
-To run the development server:
+1. Clone the repository
+2. Navigate to the `biscotti_cafe` directory
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Generate Prisma client:
+   ```
+   npx prisma generate
+   ```
+5. Run database migrations:
+   ```
+   npx prisma migrate dev --name init
+   ```
+6. Start the server:
+   ```
+   node server.js
+   ```
+7. Visit `http://localhost:3000` in your browser
 
-```bash
-npm run dev
-```
+## API Endpoints
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `POST /api/contact` - Submit contact form
+- `GET /api/messages` - View all contact messages (admin endpoint)
 
-## Key Directories
+## Database
 
-- `src/app/` - All pages and components
-- `src/app/api/` - API routes
-- `prisma/` - Database schema and migrations
-- `src/app/blog/posts/` - Markdown blog posts
+The project uses SQLite as the database with Prisma ORM for database operations. The database file is automatically created as `dev.db` in the project directory.
 
-## Learn More
+## Contact Information
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Phone: +254 116 000 026
+- WhatsApp: [Message us](https://wa.me/254116000026)
