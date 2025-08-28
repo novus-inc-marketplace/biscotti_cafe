@@ -206,96 +206,178 @@
                 <div class="col-12 text-center mb-5">
                     <h2 class="section-title">Our Menu</h2>
                     <p class="text-muted">Discover our delicious selection of food and beverages</p>
+                    <!-- Cart Button -->
+                    <div class="mt-3">
+                        <button id="cartBtn" class="btn btn-primary position-relative">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
             
             <div class="row">
                 <!-- Vanilla Cake -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Vanilla Cake" data-price="450">
                         <div class="d-flex justify-content-between">
                             <h5>Vanilla Cake</h5>
                             <span class="menu-price">450 KSH</span>
                         </div>
                         <p class="text-muted">Fluffy vanilla cake with creamy frosting</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Spaghetti and Meatballs -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Spaghetti & Meatballs" data-price="1100">
                         <div class="d-flex justify-content-between">
                             <h5>Spaghetti & Meatballs</h5>
                             <span class="menu-price">1100 KSH</span>
                         </div>
                         <p class="text-muted">Classic Italian pasta with homemade meatballs</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Coffee -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Coffee" data-price="270">
                         <div class="d-flex justify-content-between">
                             <h5>Coffee</h5>
                             <span class="menu-price">270 KSH</span>
                         </div>
                         <p class="text-muted">Freshly brewed premium coffee</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Mocktails -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Mocktails" data-price="550">
                         <div class="d-flex justify-content-between">
                             <h5>Mocktails</h5>
                             <span class="menu-price">550 KSH</span>
                         </div>
                         <p class="text-muted">Refreshing non-alcoholic cocktails</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Pizza -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Pizza" data-price="1300">
                         <div class="d-flex justify-content-between">
                             <h5>Pizza</h5>
                             <span class="menu-price">1300 KSH</span>
                         </div>
                         <p class="text-muted">Wood-fired pizza with fresh ingredients</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Shrimp -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Shrimp" data-price="1500">
                         <div class="d-flex justify-content-between">
                             <h5>Shrimp</h5>
                             <span class="menu-price">1500 KSH</span>
                         </div>
                         <p class="text-muted">Grilled shrimp with garlic butter sauce</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Waffles -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Waffles" data-price="750">
                         <div class="d-flex justify-content-between">
                             <h5>Waffles</h5>
                             <span class="menu-price">750 KSH</span>
                         </div>
                         <p class="text-muted">Crispy waffles with toppings of your choice</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Cheesecake -->
                 <div class="col-md-6 col-lg-4">
-                    <div class="menu-item p-4">
+                    <div class="menu-item p-4" data-item="Cheesecake" data-price="800">
                         <div class="d-flex justify-content-between">
                             <h5>Cheesecake</h5>
                             <span class="menu-price">800 KSH</span>
                         </div>
                         <p class="text-muted">Creamy New York style cheesecake</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="input-group" style="width: 120px;">
+                                <button class="btn btn-outline-secondary btn-sm minus-btn" type="button">-</button>
+                                <input type="number" class="form-control form-control-sm text-center quantity-input" value="0" min="0">
+                                <button class="btn btn-outline-secondary btn-sm plus-btn" type="button">+</button>
+                            </div>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn">Add to Cart</button>
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Place Order Button -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button id="placeOrderBtn" class="btn btn-success btn-lg" disabled>
+                        <i class="fas fa-paper-plane"></i> Place Order via WhatsApp
+                    </button>
                 </div>
             </div>
         </div>
@@ -331,7 +413,7 @@
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h4 class="mb-4">Get In Touch</h4>
-                    <p><i class="fas fa-map-marker-alt me-3"></i> 123 Cafe Street, Nairobi, Kenya</p>
+                    <p><i class="fas fa-map-marker-alt me-3"></i> Westlands Eatery Strip Mall, Muthithi Road, Nairobi</p>
                     <p><i class="fas fa-phone me-3"></i> <a href="tel:254116000026" class="text-light">+254 116 000 026</a></p>
                     <p><i class="fas fa-envelope me-3"></i> info@biscotticafe.com</p>
                     
@@ -406,6 +488,134 @@
     
     <!-- Custom JavaScript -->
     <script>
+        // Shopping cart functionality
+        let cart = [];
+        
+        // Update cart count display
+        function updateCartCount() {
+            const cartCount = document.getElementById('cartCount');
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            
+            // Enable/disable place order button
+            const placeOrderBtn = document.getElementById('placeOrderBtn');
+            placeOrderBtn.disabled = totalItems === 0;
+        }
+        
+        // Add to cart function
+        function addToCart(itemName, price, quantity) {
+            // Check if item already exists in cart
+            const existingItemIndex = cart.findIndex(item => item.name === itemName);
+            
+            if (existingItemIndex !== -1) {
+                // Update quantity if item exists
+                cart[existingItemIndex].quantity += quantity;
+                if (cart[existingItemIndex].quantity <= 0) {
+                    // Remove item if quantity is 0 or less
+                    cart.splice(existingItemIndex, 1);
+                }
+            } else if (quantity > 0) {
+                // Add new item to cart
+                cart.push({
+                    name: itemName,
+                    price: price,
+                    quantity: quantity
+                });
+            }
+            
+            updateCartCount();
+        }
+        
+        // Format cart items for WhatsApp message
+        function formatCartForWhatsApp() {
+            let message = "Hello, I'd like to place an order:\n\n";
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                message += `${item.name} x${item.quantity} - ${itemTotal} KSH\n`;
+            });
+            
+            message += `\nTotal: ${total} KSH\n\nPlease confirm my order.`;
+            return encodeURIComponent(message);
+        }
+        
+        // Place order function
+        function placeOrder() {
+            if (cart.length === 0) return;
+            
+            const phoneNumber = "254116000026";
+            const message = formatCartForWhatsApp();
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappUrl, '_blank');
+        }
+        
+        // Initialize cart functionality when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listeners to plus/minus buttons
+            document.querySelectorAll('.plus-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.quantity-input');
+                    input.value = parseInt(input.value) + 1;
+                });
+            });
+            
+            document.querySelectorAll('.minus-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.quantity-input');
+                    const currentValue = parseInt(input.value);
+                    if (currentValue > 0) {
+                        input.value = currentValue - 1;
+                    }
+                });
+            });
+            
+            // Add event listeners to add to cart buttons
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const menuItem = this.closest('.menu-item');
+                    const itemName = menuItem.getAttribute('data-item');
+                    const price = parseInt(menuItem.getAttribute('data-price'));
+                    const quantityInput = menuItem.querySelector('.quantity-input');
+                    const quantity = parseInt(quantityInput.value);
+                    
+                    if (quantity > 0) {
+                        addToCart(itemName, price, quantity);
+                        // Reset quantity input
+                        quantityInput.value = 0;
+                    } else {
+                        alert('Please select a quantity greater than 0');
+                    }
+                });
+            });
+            
+            // Add event listener to cart button
+            document.getElementById('cartBtn').addEventListener('click', function() {
+                if (cart.length === 0) {
+                    alert('Your cart is empty');
+                    return;
+                }
+                
+                let cartMessage = "Your cart:\n\n";
+                let total = 0;
+                
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    cartMessage += `${item.name} x${item.quantity} - ${itemTotal} KSH\n`;
+                });
+                
+                cartMessage += `\nTotal: ${total} KSH`;
+                alert(cartMessage);
+            });
+            
+            // Add event listener to place order button
+            document.getElementById('placeOrderBtn').addEventListener('click', placeOrder);
+        });
+        
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

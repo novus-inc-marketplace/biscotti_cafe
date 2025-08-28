@@ -49,7 +49,7 @@ A modern restaurant website with backend integration, featuring a menu, contact 
    ```
    node server.js
    ```
-7. Visit `http://localhost:3000` in your browser
+7. Visit `http://localhost:3001` in your browser
 
 ## API Endpoints
 

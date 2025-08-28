@@ -6,9 +6,10 @@ This guide provides comprehensive information on managing the backend of your Bi
 1. [Database Management](#database-management)
 2. [API Endpoints](#api-endpoints)
 3. [Managing Contact Messages](#managing-contact-messages)
-4. [Server Management](#server-management)
-5. [Troubleshooting](#troubleshooting)
-6. [Security Considerations](#security-considerations)
+4. [Shopping Cart Functionality](#shopping-cart-functionality)
+5. [Server Management](#server-management)
+6. [Troubleshooting](#troubleshooting)
+7. [Security Considerations](#security-considerations)
 
 ## Database Management
 
@@ -133,6 +134,31 @@ cp dev.db dev.db.backup.$(date +%Y%m%d)
 # Or using SQLite backup command
 sqlite3 dev.db ".backup dev.db.backup.$(date +%Y%m%d)"
 ```
+
+## Shopping Cart Functionality
+
+The shopping cart is implemented as a client-side feature using JavaScript. All cart data is stored in the browser's memory and is not persisted to the database. When a customer places an order, the cart contents are formatted into a WhatsApp message and sent to your business number.
+
+### How It Works
+1. Customers select items and quantities using the +/- buttons
+2. Items are added to the cart by clicking "Add to Cart"
+3. The cart icon shows the total number of items
+4. Customers can view their cart by clicking the cart icon
+5. When ready, customers click "Place Order via WhatsApp" to send their order
+
+### Cart Data Storage
+Cart data is stored in the browser's memory (JavaScript variable) and is lost when:
+- The page is refreshed
+- The browser tab is closed
+- The customer navigates away from the site
+
+This is intentional as the cart is meant to be a temporary shopping aid, not a persistent shopping cart.
+
+### Customizing the Cart
+To modify the cart functionality:
+1. Edit `index.html` to change the UI elements
+2. Modify the JavaScript code at the bottom of `index.html` for behavior changes
+3. The cart data structure is a simple array of objects with `name`, `price`, and `quantity` properties
 
 ## Server Management
 
